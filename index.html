@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Exemplo</title>
+    
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body{
+            background-color: black;
+        }
+        .container img {
+            height: 50vh; /* 30% da altura da tela */
+            padding-bottom: 20px;
+        }
+        .col-12{
+            z-index: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #100f0f;
+            color: #f74600;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Animes Temporada 2025</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./lib/shangri-la ca.avif"/>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./lib/headhunter.avif"/>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./lib/magic maker.avif"/>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Shangri-la Frontier
+                    </header>
+                    <img src="./lib/poster-do-anime-shangri-la.png"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Shangri-La Frontier, um "jogo de nível divino" que tem um total de 30 milhões de jogadores. Amigos online... Um mundo expansivo... Encontros com rivais... Tudo isso está mudando Rakuro e o destino de todos os outros jogadores! O melhor conto de aventura do mais forte do jogador de "jogos porcaria" está prestes a começar!.
+                        </p>
+                        <a href="https://www.crunchyroll.com/pt-br/series/G79H23Z8P/shangri-la-frontier" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                
+                    <div class="card-header">
+                        Bogus Skill Fruitmaster
+                    </div>
+                    <img src="./lib/bogus.avif"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Em um mundo onde Skill Fruits concedem poderes, o aspirante a aventureiro Light fica preso com a inútil habilidade <<Fruitmaster>>. Comer outra resulta em morte, então não há recomeços. Enquanto isso, sua amiga de infância Rena rapidamente sobe para o Rank S. Mas quando Light acidentalmente come uma segunda Skill Fruit, ele pode consumir Skill Fruits ilimitadas.
+                        </p>
+                        <a href="https://www.crunchyroll.com/pt-br/series/GZJH3D801/bogus-skill-fruitmaster-about-that-time-i-became-able-to-eat-unlimited-numbers-of-skill-fruits-that-kill-you" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Headhunted to Another World
+                    </div>
+                    <img src="./lib/headhunter-cap.jpg"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Em um mundo de fantasia alternativo, o Rei Demônio reina com um exército formidável liderado por seus Quatro Reis Celestiais. Um deles é Uchimura Denosuke, um assalariado normal inesperadamente arrancado de sua vida mundana pelo próprio Rei Demônio. Mas mesmo neste novo reino, Uchimura não recebe poderes específicos.
+                        </p>
+                        <a href="https://www.crunchyroll.com/pt-br/series/GDKHZEJPQ/headhunted-to-another-world-from-salaryman-to-big-four?srsltid=AfmBOooUmWmVUzeIJzC5vooNAjffkcRtYEgRHB17bHLOzXfGCGwYds2U" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Possibly the Greatest Alchemist of All Time
+                    </header>
+                    <img src="./lib/pssibly.avif"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Iruma Takumi se vê envolvido em uma invocação. Convocado por engano para Mildgard, um mundo de fantasia de espadas e magia, Takumi tem a chance de recomeçar. Embora sonhe com uma vida pacífica, a deusa Nolyn lhe concede "alquimia", uma habilidade ultrapoderosa que lhe permite criar qualquer coisa, de espadas sagradas a naves voadoras. Sua relutante aventura começa!
+                        </p>
+                        <a href="https://www.crunchyroll.com/pt-br/series/GQWH0M1P3/possibly-the-greatest-alchemist-of-all-time" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Magic Maker: How to Make Magic in Another World
+                    </div>
+                    <img src="./lib/magic maker-cap.avif"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Na noite do 30º aniversário, os sonhos de um homem de exercer magia se tornam realidade depois que ele morre inesperadamente. Ele acorda como Sion, uma criança em outro mundo. Ele e sua irmã mais velha, Marie, são filhos de uma família nobre de classe baixa que governa sua região. Depois de receber mensagens conflitantes de seu pai, Sion e Marie partem em uma aventura para descobrir a magia.
+                        </p>
+                        <a href="https://www.crunchyroll.com/pt-br/series/GP5HJ8417/magic-maker-how-to-make-magic-in-another-world" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Promise of Wizard
+                    </div>
+                    <img src="./lib/Promise of Wizard.avif"/>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Em uma noite de luar, Akira Masaki se encontra em um mundo mágico onde bruxos e humanos coexistem. Todo ano, eles devem enfrentar uma lua enorme e mortal que ataca o planeta. Sua única esperança está com os Wizards of the Sage, nomeados para lutar contra a ameaça sobrenatural. Mas Akira logo descobre que não foi convocada por acaso, ela foi escolhida para liderá-los na batalha.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluindo o JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
